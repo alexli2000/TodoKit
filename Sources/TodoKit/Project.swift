@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Project: Codable {
+public struct Project: Codable {
 
-	var id: UUID
+	public var id: UUID?
 
 }

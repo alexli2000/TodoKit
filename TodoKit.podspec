@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TodoKit"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "The models for a Project Management App"
 
   s.description  = "Includes the Project, Todo lists whithin there, and the items in each of those."

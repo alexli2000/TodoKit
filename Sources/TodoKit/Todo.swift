@@ -11,13 +11,13 @@ import Foundation
 /// A single entry of a Todo list.
 public struct Todo: Codable {
 	/// The unique identifier for this `Todo`.
-	var id: UUID?
+	public var id: UUID?
 
 	/// A title describing what this `Todo` entails.
-	var title: String
+	public var title: String
 
-	init(id: UUID? = nil, title: String) {
-		self.id = id
+	public init(title: String) {
+		self.id = nil
 		self.title = title
 	}
 }
