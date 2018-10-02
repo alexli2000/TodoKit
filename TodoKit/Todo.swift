@@ -15,9 +15,4 @@ public struct Todo: Codable {
 
 	/// A title describing what this `Todo` entails.
 	var title: String
-
-	func asJSON() -> Data {
-		let encoder = JSONEncoder()
-		return try! encoder.encode(self)
-	}
 }
