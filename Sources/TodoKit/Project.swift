@@ -10,9 +10,6 @@ import Foundation
 
 struct Project: Codable {
 
-	var id: String
+	var id: UUID
 
-	func todos() {
-		let todo = Todo
-	}
 }

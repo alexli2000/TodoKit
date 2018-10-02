@@ -12,6 +12,7 @@
 		BC2813652163C05700895E75 /* TodoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2813572163C05700895E75 /* TodoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC28136F2163C06B00895E75 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28136E2163C06B00895E75 /* Todo.swift */; };
 		BC74C9CD2163CC3D00861DA2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74C9CC2163CC3D00861DA2 /* Project.swift */; };
+		BCB2239E2163D3BD00D6F12E /* TodoKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BCB2239C2163D3BD00D6F12E /* TodoKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		BC2813642163C05700895E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC28136E2163C06B00895E75 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		BC74C9CC2163CC3D00861DA2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		BCB2239C2163D3BD00D6F12E /* TodoKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TodoKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		BC28134A2163C05700895E75 = {
 			isa = PBXGroup;
 			children = (
-				BC2813562163C05700895E75 /* TodoKit */,
+				BCB2239C2163D3BD00D6F12E /* TodoKit.podspec */,
+				BCB223972163D33400D6F12E /* Sources */,
 				BC2813612163C05700895E75 /* TodoKitTests */,
 				BC2813552163C05700895E75 /* Products */,
 			);
@@ -72,17 +75,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC2813562163C05700895E75 /* TodoKit */ = {
-			isa = PBXGroup;
-			children = (
-				BC28136E2163C06B00895E75 /* Todo.swift */,
-				BC74C9CC2163CC3D00861DA2 /* Project.swift */,
-				BC2813572163C05700895E75 /* TodoKit.h */,
-				BC2813582163C05700895E75 /* Info.plist */,
-			);
-			path = TodoKit;
-			sourceTree = "<group>";
-		};
 		BC2813612163C05700895E75 /* TodoKitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +82,25 @@
 				BC2813642163C05700895E75 /* Info.plist */,
 			);
 			path = TodoKitTests;
+			sourceTree = "<group>";
+		};
+		BCB223972163D33400D6F12E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC2813572163C05700895E75 /* TodoKit.h */,
+				BC2813582163C05700895E75 /* Info.plist */,
+				BCB223982163D33400D6F12E /* TodoKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BCB223982163D33400D6F12E /* TodoKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC28136E2163C06B00895E75 /* Todo.swift */,
+				BC74C9CC2163CC3D00861DA2 /* Project.swift */,
+			);
+			path = TodoKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB2239E2163D3BD00D6F12E /* TodoKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +370,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TodoKit/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,7 +397,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TodoKit/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
