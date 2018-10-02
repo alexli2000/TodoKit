@@ -15,4 +15,9 @@ public struct Todo: Codable {
 
 	/// A title describing what this `Todo` entails.
 	var title: String
+
+	init(id: UUID? = nil, title: String) {
+		self.id = id
+		self.title = title
+	}
 }
